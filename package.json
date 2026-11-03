@@ -2,19 +2,26 @@
   "name": "WonderCart",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "workspaces": [
+    "./packages/client",
+    "./packages/server"
+  ],
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm --parallel -r dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "vite-plus": "catalog:"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
       "version": "^12.16.1",
       "onFail": "download"
     }
-  },
-  "type": "module"
+  }
 }

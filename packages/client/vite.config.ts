@@ -8,7 +8,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 // https://vite.dev/config/
 export default defineConfig({
   staged: {
-    "packages/client/**/*.{js,jsx,ts,tsx,json,css}": "vp check --fix",
+    "*": "vp check --fix",
   },
   fmt: {},
   lint: {
