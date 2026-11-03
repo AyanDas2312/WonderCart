@@ -9,8 +9,8 @@ export default multer({
     // filename: (_, file, callback) => {
     //   callback(null, ((Date.now() + '-' + Math.round(Math.random() * 1E9)) + '-' + file.originalname));
     // },
-  // }
-),
+    // }
+  ),
   // fileFilter: (_, file, callback) => {
   //   const allowedMimes = ['image/jpeg', 'image/png', 'image/webp']; // Allowed MIME types
   //   if (allowedMimes.includes(file.mimetype)) callback(null, true);

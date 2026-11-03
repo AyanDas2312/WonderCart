@@ -12,7 +12,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --parallel -r dev"
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r --if-present build",
+    "build:client": "pnpm --dir packages/client build",
+    "build:server": "pnpm --dir packages/server build",
+    "start": "pnpm --dir packages/server start"
   },
   "devDependencies": {
     "vite-plus": "catalog:"

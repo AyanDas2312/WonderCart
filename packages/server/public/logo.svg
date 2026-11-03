@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&amp;display=swap');
+      .grid-letter {
+        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 900;
+        font-size: 128px;
+        fill: #FFFFFF;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .grid-line {
+        stroke: #FFFFFF;
+        stroke-width: 8;
+        stroke-linecap: square;
+      }
+    </style>
+  </defs>
+  <!-- Black Background -->
+  <rect width="400" height="400" fill="#000000" />
+  <!-- 2x2 Grid Lines -->
+  <line x1="200" y1="0" x2="200" y2="400" class="grid-line" />
+  <line x1="0" y1="200" x2="400" y2="200" class="grid-line" />
+  <!-- Letters: V, R, S, T -->
+  <text x="100" y="100" class="grid-letter">V</text>
+  <text x="300" y="100" class="grid-letter">R</text>
+  <text x="100" y="300" class="grid-letter">S</text>
+  <text x="300" y="300" class="grid-letter">T</text>
+</svg>
