@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="theme-color" content="#ffffff"> -->
+  <meta name="description"
+    content="Express 5 and TypeScript starter with MongoDB, Zod validation, sessions, and OpenAPI documentation.">
+  <title>Modern Express Template</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-base-100 text-base-content antialiased ">
+  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-field focus:bg-base-100 focus:p-3"
+    href="#main">Skip to content</a>
+
+  <header class="border-b border-base-300">
+    <nav class="mx-auto flex h-14 w-full  items-center justify-between px-6 sm:px-16" aria-label="Main navigation">
+      <a class="text-sm font-semibold tracking-tight" href="#">Modern Express Template</a>
+      <div class="flex items-center gap-5 text-sm">
+        <a class="hidden text-base-content/70 hover:text-base-content sm:inline" href="#features">Features</a>
+        <a class="hidden text-base-content/70 hover:text-base-content sm:inline" href="#stack">Stack</a>
+        <a class="btn btn-neutral btn-sm" href="https://github.com/SoumabhaSaha15/ModernExpressTemplate"
+          target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="mx-auto w-full  px-4 py-12 sm:px-16 sm:py-16" aria-labelledby="hero-title">
+      <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h1 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl" id="hero-title">
+            Express 5 and TypeScript starter for production APIs
+          </h1>
+          <p class="mt-4 max-w-lg text-base leading-7 text-base-content/70">
+            Environment validation, request validation, MongoDB, sessions, and OpenAPI docs are configured out of the
+            box, so you can start on application code.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn btn-neutral" href="https://github.com/SoumabhaSaha15/ModernExpressTemplate" target="_blank"
+              rel="noreferrer">View on GitHub</a>
+            <a class="btn btn-outline" href="#stack">View stack</a>
+          </div>
+          <p class="mt-5 text-sm text-base-content/60">v1.0.0 · Open source · Node.js 22+</p>
+        </div>
+
+        <div class="mockup-code bg-neutral text-neutral-content text-sm">
+          <pre data-prefix="$"><code>pnpm degit SoumabhaSaha15/ModernExpressTemplate</code></pre>
+          <pre data-prefix="$"><code>npm install</code></pre>
+          <pre data-prefix="$"><code>npm run dev</code></pre>
+          <pre data-prefix=">" class="text-neutral-content/60"><code>API docs at /docs</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto w-full  scroll-mt-4 border-t border-base-300 px-4 py-12 sm:px-16" id="features"
+      aria-labelledby="features-title">
+      <h2 class="text-2xl font-semibold tracking-tight" id="features-title">Features</h2>
+      <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-box border border-base-300 p-5">
+          <h3 class="font-semibold">Type safety</h3>
+          <p class="mt-2 text-sm leading-6 text-base-content/70">TypeScript, native ES modules, and validated environment variables.</p>
+        </article>
+        <article class="rounded-box border border-base-300 p-5">
+          <h3 class="font-semibold">Validation</h3>
+          <p class="mt-2 text-sm leading-6 text-base-content/70">Zod schemas define request validation and the API contract in one place.</p>
+        </article>
+        <article class="rounded-box border border-base-300 p-5">
+          <h3 class="font-semibold">Database</h3>
+          <p class="mt-2 text-sm leading-6 text-base-content/70">MongoDB with Mongoose, plus database-backed session storage.</p>
+        </article>
+        <article class="rounded-box border border-base-300 p-5">
+          <h3 class="font-semibold">API documentation</h3>
+          <p class="mt-2 text-sm leading-6 text-base-content/70">OpenAPI generated from your schemas, with Swagger UI at <code class="font-mono text-xs">/docs</code> in development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="border-y border-base-300 bg-base-200/60 scroll-mt-4" id="stack" aria-labelledby="stack-title">
+      <div class="mx-auto w-full  px-4 py-12 sm:px-16">
+        <h2 class="text-2xl font-semibold tracking-tight" id="stack-title">Stack</h2>
+        <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5" aria-label="Technologies and package versions">
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="nodejs.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Node.js</div><div class="font-mono text-xs text-base-content/60">≥ 22.x</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="express.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Express</div><div class="font-mono text-xs text-base-content/60">^5.2.1</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="typescript.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">TypeScript</div><div class="font-mono text-xs text-base-content/60">~6.0.3</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="mongodb.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">MongoDB</div><div class="font-mono text-xs text-base-content/60">^7.7.0 driver</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="mongoose.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Mongoose</div><div class="font-mono text-xs text-base-content/60">9.11.1</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="zod.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Zod</div><div class="font-mono text-xs text-base-content/60">^4.6.5</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="dotenv.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">dotenv</div><div class="font-mono text-xs text-base-content/60">18.0.6</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="eslint.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">ESLint</div><div class="font-mono text-xs text-base-content/60">^10.12.0</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="swagger.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Swagger UI</div><div class="font-mono text-xs text-base-content/60">^5.0.1</div></div>
+          </div>
+          <div class="flex items-center gap-3 rounded-box border border-base-300 bg-base-100 p-3">
+            <img class="size-8" src="openapiinitiative.svg" alt="" loading="lazy">
+            <div><div class="text-sm font-medium">Zod to OpenAPI</div><div class="font-mono text-xs text-base-content/60">^9.1.0</div></div>
+          </div>
+        </div>
+        <p class="mt-4 text-xs text-base-content/60">Versions are taken from the template’s package manifest.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto flex w-full  flex-wrap items-center justify-between gap-2 px-4 py-6 text-xs text-base-content/60 sm:px-16">
+    <span>ModernExpressTemplate · v1.0.0</span>
+    <a class="hover:text-base-content" href="https://github.com/SoumabhaSaha15/ModernExpressTemplate" target="_blank"
+      rel="noreferrer">GitHub</a>
+  </footer>
+</body>
+
+</html>
