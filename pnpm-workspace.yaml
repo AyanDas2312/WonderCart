@@ -6,8 +6,8 @@ allowBuilds:
   "@scarf/scarf": true
 
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
-  vite-plus: 1.4.0
+  vite: npm:@voidzero-dev/vite-plus-core@1.3.0
+  vite-plus: 1.3.0
 
 minimumReleaseAgeExclude:
   - "@oxc-transform-react/binding-android-arm-eabi@0.157.0"
@@ -55,3 +55,10 @@ permissions:
     skills: true
   "@tanstack/router-plugin":
     skills: true
+overrides:
+  vite@*: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
