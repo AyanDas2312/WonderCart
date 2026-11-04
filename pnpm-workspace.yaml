@@ -48,13 +48,6 @@ minimumReleaseAgeExclude:
   - oxc-transform-react@0.157.0
   - oxlint@1.91.0
 
-permissions:
-  "@tanstack/devtools-vite":
-    skills: true
-  "@tanstack/react-router":
-    skills: true
-  "@tanstack/router-plugin":
-    skills: true
 overrides:
   vite@*: "catalog:"
 peerDependencyRules:
