@@ -18,9 +18,6 @@
     "build:server": "pnpm --dir packages/server build",
     "start": "pnpm --dir packages/server start"
   },
-  "devDependencies": {
-    "vite-plus": "catalog:"
-  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
