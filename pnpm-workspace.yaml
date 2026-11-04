@@ -4,7 +4,6 @@ packages:
 
 allowBuilds:
   "@scarf/scarf": true
-
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.3.0
   vite-plus: 1.3.0
@@ -55,3 +54,15 @@ peerDependencyRules:
     - vite
   allowedVersions:
     vite: "*"
+permissions:
+  "@tanstack/devtools-vite":
+    skills: true
+  "@tanstack/react-router":
+    skills: true
+  "@tanstack/router-plugin":
+    skills: true
+  esbuild:
+    build: true
+skills:
+  dirs:
+    - .claude/skills

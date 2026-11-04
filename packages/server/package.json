@@ -8,7 +8,7 @@
     "#/*": "./dist/*"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vpx --watch --inspect src/index.ts",
+    "dev": "cross-env NODE_ENV=development tsx --watch --inspect src/index.ts",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "build": "tsc && tsc-alias --resolve-full-paths",
     "clear": "rm -rf dist",
@@ -52,8 +52,8 @@
     "cross-env": "^10.1.0",
     "globals": "^17.14.0",
     "tsc-alias": "^1.9.10",
-    "typescript": "7.0.2",
-    "vite-plus": "catalog:"
+    "tsx": "^4.23.15",
+    "typescript": "7.0.2"
   },
   "engines": {
     "node": ">=22.x"
