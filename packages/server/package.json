@@ -8,12 +8,12 @@
     "#/*": "./dist/*"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vpx --watch --inspect src/index.ts",
+    "dev": "cross-env NODE_ENV=development tsx --watch --inspect src/index.ts",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "build": "tsc && tsc-alias --resolve-full-paths",
     "clear": "rm -rf dist",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "vp lint .",
+    "lint:fix": "vp lint . --fix"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^9.1.0",
@@ -50,12 +50,10 @@
     "@types/node": "^26.6.6",
     "@types/swagger-ui-express": "^4.1.8",
     "cross-env": "^10.1.0",
-    "eslint": "^10.14.0",
     "globals": "^17.14.0",
-    "jiti": "^2.7.0",
     "tsc-alias": "^1.9.10",
-    "typescript": "~6.0.3",
-    "typescript-eslint": "8.72.1"
+    "tsx": "^4.23.15",
+    "typescript": "7.0.2"
   },
   "engines": {
     "node": ">=22.x"

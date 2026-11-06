@@ -21,7 +21,7 @@ try {
     .use(cors({ origin: env.CORS_URL, credentials: true }))
     .set("query parser", "extended")
     .use(
-      express.static(path.join("public"), {
+      express.static(path.resolve("public"), {
         index: env.NODE_ENV === "production" ? ["index.html"] : false,
       }),
     )
@@ -33,7 +33,7 @@ try {
     .use(csrfSynchronisedProtection);
   if (env.NODE_ENV === "production")
     APP.use("/api", router).get(/^\/(?!api\/).*/, (_, res) =>
-      res.sendFile(path.join("public", "index.html")),
+      res.sendFile(path.resolve("public", "index.html")),
     );
   if (env.NODE_ENV === "development") {
     const SWAGGER_SPECS = buildOpenApiSpec(env);
