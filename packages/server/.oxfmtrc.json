@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "none",
+  "ignorePatterns": [
+    "dist/**",
+    "*.min.js",
+    "node_modules/**",
+    "coverage/**",
+    "build/**",
+    "out/**",
+    "public/**",
+    "pnpm-lock.yaml"
+  ]
+}

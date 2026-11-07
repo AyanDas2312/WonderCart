@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { type Env } from '#/configurations/env.js';
+import { type Env } from "#/configurations/env.js";
 import {
   OpenAPIRegistry,
   OpenApiGeneratorV3,
