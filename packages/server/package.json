@@ -1,7 +1,6 @@
 {
-  "name": "ModernExpressTemplate",
+  "name": "wonder_cart-server",
   "version": "1.0.0",
-  "description": "A modern Express.js template for Node.js 22+ and TypeScript 6+ precongigured with ESLint, and mongodb-mongoose dotenv, and more.",
   "type": "module",
   "main": "index.js",
   "imports": {
@@ -12,8 +11,9 @@
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "build": "tsc && tsc-alias --resolve-full-paths",
     "clear": "rm -rf dist",
-    "lint": "vp lint .",
-    "lint:fix": "vp lint . --fix"
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^9.1.0",
@@ -37,7 +37,6 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/cookie-parser": "^1.4.10",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
@@ -51,6 +50,8 @@
     "@types/swagger-ui-express": "^4.1.8",
     "cross-env": "^10.1.0",
     "globals": "^17.14.0",
+    "oxfmt": "0.77.0",
+    "oxlint": "1.92.0",
     "tsc-alias": "^1.9.10",
     "tsx": "^4.23.15",
     "typescript": "7.0.2"

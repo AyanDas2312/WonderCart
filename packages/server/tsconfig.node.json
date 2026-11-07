@@ -7,7 +7,5 @@
     "noEmit": true,
     "strict": true
   },
-  "include": [
-    "eslint.config.ts"
-  ]
+  "include": ["eslint.config.ts"]
 }

@@ -7,7 +7,7 @@ const UserSchema = registry.register(
   z.object({
     id: z.string().openapi({ example: "usr_123" }),
     name: z.string().openapi({ example: "Alice" }),
-  })
+  }),
 );
 
 // Register endpoint route
@@ -33,9 +33,8 @@ registry.registerPath({
 });
 
 export default async (_: Request, res: Response) => {
-
   res.json({
     id: "usr_123",
     name: "Alice",
   });
-}
+};

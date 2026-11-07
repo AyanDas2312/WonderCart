@@ -2,12 +2,8 @@
   "compilerOptions": {
     "composite": true,
     "target": "es2023",
-    "lib": [
-      "ES2023"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["ES2023"],
+    "types": ["node"],
     "skipLibCheck": true,
     /* Bundler / Node mode */
     "module": "nodenext",
@@ -24,7 +20,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "vite.config.ts"
-  ]
+  "include": ["vite.config.ts"]
 }
