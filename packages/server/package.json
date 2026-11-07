@@ -29,7 +29,7 @@
     "express-session": "^1.19.0",
     "express-zod-safe": "^3.2.1",
     "mongodb": "^7.8.0",
-    "mongoose": "9.11.4",
+    "mongoose": "9.12.0",
     "morgan": "^1.12.1",
     "multer": "^2.5.0",
     "swagger-themes": "^1.4.3",
